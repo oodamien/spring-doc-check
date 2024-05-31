@@ -1,5 +1,0 @@
-
-```
-yarn
-yarn start
-```
