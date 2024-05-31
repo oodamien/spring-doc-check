@@ -1,0 +1,140 @@
+html {
+  font-size: $spring-font-size;
+  font-family: $spring-font-family;
+  color: $light-color;
+  font-weight: 300;
+  line-height: 1.8rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: $spring-font-family;
+  background-color: $light-background;
+  margin: 0;
+}
+
+.header {
+  border-bottom: 1px solid $light-border;
+  h1 {
+    padding: $spring-8points 0;
+    padding-left: 20px;
+    margin: 0;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer {
+  padding: $spring-8points * 2 0;
+  border-top: 1px solid $light-border;
+}
+
+.loading {
+  padding: 3rem;
+}
+
+.main {
+  padding: $spring-8points * 3;
+  a {
+    color: $light-link;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.logo {
+  height: 48px;
+  max-width: 250px;
+  .st0 {
+    fill: #6db33f;
+  }
+  .st1 {
+    fill: #ffffff;
+  }
+}
+
+.table {
+  text-align: left;
+  width: 100%;
+  tr td,
+  tr th {
+    border-bottom: 1px solid $light-border;
+    padding: 1rem 0;
+  }
+  tr:last-child td {
+    border-bottom: 0 none;
+  }
+}
+
+.badge {
+  align-items: center;
+  background-color: #80ea6e;
+  border-radius: 4px;
+  color: #111;
+  display: inline-block;
+  font-size: calc(12 / var(--rem-base) * 1rem);
+  font-weight: 600;
+  justify-content: center;
+  padding: 0.25em 0.55em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  line-height: 14px;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.run {
+  padding: $spring-8points * 3;
+}
+
+.re-run {
+  padding-bottom: 2rem;
+}
+
+button.button {
+  background: transparent;
+  border: 2px solid #111;
+  border-radius: 0;
+  color: #111;
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  height: auto;
+  line-height: 20px;
+  overflow: hidden;
+  padding: 10px 30px;
+  position: relative;
+  text-transform: uppercase;
+  transition: color 0.2s ease-in-out;
+  z-index: 0;
+  cursor: pointer;
+}
+
+button.button:before {
+  background-color: #191e1e;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(-101%);
+  transition: 0.2s ease-in-out;
+  z-index: -1;
+}
+
+button.button:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+button.button:hover:before {
+  transform: translateX(0);
+}

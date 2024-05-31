@@ -1,0 +1,13 @@
+ui/.env
+ui/.cache/
+ui/yarn-error.log
+
+ui/analysis/
+ui/node/
+ui/node_modules/
+ui/public/
+ui/target/
+
+
+scripts/node_modules/
+.DS_Store
